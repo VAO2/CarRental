@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CarRentalServices</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background: url(https://images.unsplash.com/photo-1681361270520-4cc3961d3b00?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)no-repeat center center;object-fit:cover;height:100vh;width:100vw;overflow-y: hidden;">
+    <nav class="navbar navbar-expand-lg navbars" style="background:transparent;margin-top: 3%;">
+        <div class="container-fluid ">
+            <h1>
+                <a class="navbar-brand black" href="/"
+                    style="font-weight: 600;color:rgba(133, 130, 130, 0.945);font-size: 2.5rem;margin-top: 3%;">CarRentalServices <img
+                        src="/photos/car.png"></img></a>
+            </h1>
+        </div>
+    </nav>
+    
+    <div style="display: flex;flex-direction:column;justify-content: center;align-items: center;width: 100vw;height: 80vh;">
+        <div style="backdrop-filter: blur(5px) ;background: rgba(128, 128, 128, 0.379);padding: 3%;border: 0.01rem solid white;border-radius: 0.5rem;">
+            <form method="post" action="/signin">
+                <div class="row mb-3 ">
+                    <div >
+                        <input type="email"style="background:transparent;color:white;" class="form-control myinput b" id="inputEmail3" placeholder="Email"
+                            name="email" required></input>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div >
+                        <input type="password"style="background:transparent;color:white;" class="form-control myinput c" id="inputPassword3" placeholder="Password"
+                            name="password" required></input>
+                    </div>
+                </div>
+                <div  style="display: flex;justify-content: center;align-items: center;">
+                    <button type="submit" class="btn btn-light mybtn " style="background: rgba(178, 170, 170, 0.479);color:white;">Sign In</button>
+                </div>
+    
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>

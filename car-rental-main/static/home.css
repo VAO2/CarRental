@@ -1,0 +1,278 @@
+html,
+body{
+   width: 100%;
+   height: 100%;
+   overflow-x: hidden;
+   margin: 0;
+   text-align: center;
+
+}
+
+ 
+  
+  p {
+    color: #8f8f8f;
+  }
+  
+  /* Headings */
+ 
+  .big-heading {
+    /* font-family: "Montserrat-Black"; */
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+   
+  .landing{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 100%;
+  }
+  /* animation and illustration */
+  .illustration{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   margin: 4rem;
+   height: 500px;
+   width: 50%;
+  }
+  .car-img{
+    position: absolute;
+    display: block;
+    height: 40vh;
+    width: 35vw;
+    z-index: 3;
+  }
+  #animation-container{
+    position: absolute;
+    transform: rotate(-110deg);
+    height: 70vh;
+    width: 70vw;
+    z-index: 2;
+  }
+  .gradient-rectangle{
+    position: absolute;
+    height: 380px;
+    width: 380px;
+    transform: rotate(-45deg);
+    border-radius: 150px;
+    background: linear-gradient(251deg, #0D00A7 11.22%, #9BBDFF 97.94%);
+    z-index: 1;
+  }
+
+  /* content part */
+  .content{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  .btn{
+    border-radius: 50px;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #0D00A7;
+  }
+  
+  .section-heading {
+    position: absolute;
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  #output{
+    position: absolute;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 700;
+    z-index: 3;
+  }
+  /* Containers */
+
+  .container-fluid{
+    padding: 7% 15%;
+  }
+  
+  /* Sections */
+  
+  .colored-section {
+    /*pick a darker background color of #5e2f0b */
+    background-color: #2349a1;
+    color: #fff;
+  }
+  
+  .white-section {
+    background-color: rgb(12, 7, 113);
+  }
+  
+  /* Navigation Bar */
+  
+  .navbar {
+    padding: 0 2%;
+    /* background-color: #5e2f0b; */
+  }
+  
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  
+  .nav-item {
+    padding: 0 5px;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  
+  /* Buttons */
+  
+  .download-button {
+    margin: 5% 3% 5% 0;
+  }
+  
+  /* Title Section */
+  
+  #title {
+    background-color: #d1c0ed;
+    color: #fff;
+  }
+/*   
+  #title .container-fluid {
+    padding: 3% 15% 7%;
+  } */
+  
+  /* Title Image */
+ 
+  
+  /* Features Section */
+  .container {
+     /* margin: 0; */
+   margin: 0;
+/* margin: 0 0; */
+    padding-top: 11rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+    box-sizing:border-box;
+    width: max-content;
+  }
+  #features {
+    position: relative;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+  }
+  
+  .feature-box {
+    padding: 4.5%;
+  }
+  
+  .icon {
+    color: rgb(117, 111, 196);
+    margin-bottom: 1rem;
+  }
+  
+  .icon:hover {
+    color: rgb(206, 197, 222);
+  }
+  
+
+  /* Footer Section */
+  
+  .social-icon {
+    margin: 20px 10px;
+  }
+  .black{
+
+    color: #6659c8;
+}
+.justify-content-center
+{
+
+  justify-content: center;
+  text-align: center;
+}
+.main
+{
+
+padding: 11rem 0;
+
+}
+.myinput
+     {
+      width:30%;
+      margin: 0.5rem auto;     
+     }
+     
+.commentat{
+  background-color: #EFF5F5;
+  text-align: center;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+.comments-pics
+{
+  height: 140px;;
+  width:140px;
+  border-radius:100%;
+}
+.title2 {
+  font-weight: 600;
+  /* font-size: 3rem; */
+  padding-top:1rem;
+  padding-bottom: 1rem;
+}
+.carousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.padd-down
+{
+padding-bottom: 1rem;
+}
+
+.carousel-inner{
+  display: flex;
+  align-items: center;
+  height: 70vh;
+  width: 70vw;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #5962c8;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #5d59c8;
+}
+.last-section
+{
+  background-color: #5e2f0b;
+}
+.a{
+
+  font-size: 1.5rem;
+}

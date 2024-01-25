@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CarRentalServices</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background: url(https://images.unsplash.com/photo-1681361270520-4cc3961d3b00?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)no-repeat center center;object-fit:cover;height:100vh;width:100vw;">
+    <nav class="navbar navbar-expand-lg navbars" style="background:transparent;margin-top: 1%;">
+        <div class="container-fluid ">
+            <h1>
+                <a class="navbar-brand black" href="/"
+                    style="font-weight: 600;color:rgba(133, 130, 130, 0.945);font-size: 2.5rem;">CarRentalServices <img
+                        src="/photos/car.png"></img></a>
+            </h1>
+        </div>
+    </nav>
+
+    <div style="display: flex;flex-direction:column;justify-content: center;align-items: center;width: 100vw;height: 85vh;">
+        <form id = "formmmm" style="display: flex;flex-direction: column;align-items: flex-start;backdrop-filter: blur(10px);background: rgba(128, 128, 128, 0.379);padding:3%;border-radius: 0.5rem ;border:0.01rem solid white;">
+            <div class="row mb-3 " >
+                <div class="col ">
+                    <input id="ssn" type="text" class="form-control myinput a"style="background:transparent;color:white;" placeholder="SSN" name="ssn"
+                        minlength="6" maxlength="6" required></input>
+                </div>
+            </div>
+    
+            <div style="display: flex;">
+    
+                <div class="row mb-3 " style="padding: 1%;">
+                    <div class="col ">
+                        <input type="text" class="form-control myinput a"style="background:transparent;color:white;" placeholder="First Name" name="fName"
+                            maxlength="32" required></input>
+                    </div>
+                </div>
+    
+                <div class="row mb-3 " style="padding: 1%;">
+                    <div class="col ">
+                        <input type="text" class="form-control myinput a"style="background:transparent;color:grey;" placeholder="Last Name" name="lName"
+                            maxlength="32" required></input>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div class="row mb-3 "style="padding: 1%;">
+                    <div class="col ">
+                        <input id="email" type="email" class="form-control myinput b"style="background:transparent;color:grey;" placeholder="E-Mail" name="email"
+                            maxlength="64" value=<%=userEmail%> required ></input>
+                    </div>
+                </div>
+    
+                <div class="row mb-3 "style="padding: 1%;">
+                    <div class="col ">
+                        <input id="phone" type="tel" class="form-control myinput b"style="background:transparent;color:grey;" placeholder="Phone Number"
+                            name="phone_no" minlength="11" maxlength="11" required></input>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div class="row mb-3 "style="padding: 1%;">
+                    <div class="col">
+                        <input type="text" class="form-control myinput b"style="background:transparent;color:grey;" placeholder="Credit Card Holder's name"
+                            name="holder_name" maxlength="64" required></input>
+                    </div>
+                </div>
+    
+                <div class="row mb-3 "style="padding: 1%;">
+                    <div class="col">
+                        <input type="text" pattern="[0-9]*" inputmode="numeric" class="form-control myinput b"style="background:transparent;color:grey;"
+                            placeholder="Credit Card Number" name="credit_card_no" minlength="16" maxlength="16"
+                            required></input>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mb-3">
+                <div class="col">
+                    <input type="date" pattern="[0-9]*" inputmode="numeric" class="form-control myinput b"style="background:transparent;color:grey;"
+                        placeholder="Credit Card Expiry Date" name="credit_card_expiry_date" required></input>
+                </div>
+            </div>
+    
+            <div class="row mb-3">
+                <div class="col">
+                    <input type="text" pattern="[0-9]*" inputmode="numeric" class="form-control myinput b"style="background:transparent;color:grey;"
+                        placeholder="Credit Card CVV" name="credit_card_cvv" maxlength="3" minlength="3"
+                        required></input>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div class="row mb-3"style="padding: 1%;">
+                    <div class="col">
+                        <input id="pass1" type="password" class="form-control myinput c"style="background:transparent;color:grey;" placeholder="Password"
+                            name="password" required></input>
+                    </div>
+                </div>
+    
+                <div class="row mb-3"style="padding: 1%;">
+                    <div class="col">
+                        <input id="pass2" type="password" class="form-control myinput d"style="background:transparent;color:grey;" placeholder="Confirm Password"
+                            name="confirm" required></input>
+                    </div>
+                </div>
+            </div>
+    
+            <button id="submit-button" class="btn btn-light mybtn g " style="background: rgba(178, 170, 170, 0.479);color:white;margin-bottom: 0rem;">Register</button>
+    
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
+    <script src="/js/signup.js"></script>
+</body>
+
+</html>
